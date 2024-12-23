@@ -20,12 +20,25 @@ PurePharma is a comprehensive solution for purchasing health and wellness produc
 - Deployed on **Render** for high availability.
 
 ### Core Functionalities
-- **Product Catalog**: View all available products with detailed information.
-- **Search and Filter**: Quickly find products based on name, category, or price.
-- **Shopping Cart**: Add items to the cart, view total prices, and checkout.
-- **User Authentication**: Secure login and registration system.
-- **Admin Panel**: Add, edit, or delete products from the inventory (optional).
-- **Order Tracking**: Monitor order status from purchase to delivery.
+
+### 🛒 **E-commerce Functionality**
+- **Search Products**: Quickly find products using advanced search functionality.
+- **Filtering Options**: Filter products by:
+  - Categories: Medicines, wellness products, etc.
+  - Price range: Define your budget to view relevant products.
+- **Sorting Options**: Sort product listings by:
+  - Price (Low to High / High to Low).
+
+### 👤 **User Authentication**
+- Secure **Login** and **Signup** functionality.
+- Manage user accounts and access personalized features like order history.
+
+### 📱 **Responsive Design**
+- Fully responsive UI for a seamless experience on desktops, tablets, and smartphones.
+
+### 🩺 **Integrated Healthcare Services**
+- **Video Consultations**: Schedule virtual appointments with healthcare professionals.
+- **Hospital Appointments**: Book in-person appointments directly through the platform.
 
 ---
 
@@ -112,7 +125,7 @@ PurePharma is a comprehensive solution for purchasing health and wellness produc
 ## Screenshots
 
 ### Home Page
-![Home Page](https://via.placeholder.com/800x400?text=Home+Page)
+![Home Page]([https://via.placeholder.com/800x400?text=Home+Page](https://github.com/rahulsharma998/The-Backenders-Web_043/blob/main/Frontend/pharmacy/public/photos/Screenshot%202024-12-23%20090829.png))
 
 ### Product Catalog
 ![Product Catalog](https://via.placeholder.com/800x400?text=Product+Catalog)
