@@ -128,13 +128,13 @@ PurePharma is a comprehensive solution for purchasing health and wellness produc
 ![Home Page](https://github.com/rahulsharma998/The-Backenders-Web_043/blob/main/Frontend/pharmacy/public/photos/Screenshot%202024-12-23%20090829.png)
 
 ### Product Catalog
-![Product Catalog](https://via.placeholder.com/800x400?text=Product+Catalog)
+[![Product Catalog](https://github.com/rahulsharma998/The-Backenders-Web_043/blob/main/Frontend/pharmacy/public/photos/Screenshot%202024-12-23%20090857.png)
 
 ### Shopping Cart
-![Shopping Cart](https://via.placeholder.com/800x400?text=Shopping+Cart)
+[![Shopping Cart](https://github.com/rahulsharma998/The-Backenders-Web_043/blob/main/Frontend/pharmacy/public/photos/Screenshot%202024-12-23%20090934.png)
 
 ### Admin Panel
-![Admin Panel](https://via.placeholder.com/800x400?text=Admin+Panel)
+[![Admin Panel](https://github.com/rahulsharma998/The-Backenders-Web_043/blob/main/Frontend/pharmacy/public/photos/Screenshot%202024-12-23%20090843.png)
 
 ---
 
