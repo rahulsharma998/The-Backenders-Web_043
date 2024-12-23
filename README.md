@@ -49,12 +49,12 @@ PurePharma is a comprehensive solution for purchasing health and wellness produc
 ## Deployment
 
 ### Front-End
-- **Netlify**: [Visit Front-End](#)
+- **Netlify**:[ [Visit Front-End](#)](https://6768f3ab44e08bdb6d2280c0--candid-mooncake-e8530d.netlify.app/)
   - Features continuous deployment directly from the GitHub repository.
   - Deployed using optimized build settings for performance.
 
 ### Back-End
-- **Render**: [Visit Back-End API](#)
+- **Render**: [[Visit Back-End API](#)](https://the-backenders-043-1.onrender.com)
   - Set up with environment variables for secure configuration.
   - Auto-deployment from the GitHub repository.
 
@@ -66,44 +66,27 @@ PurePharma is a comprehensive solution for purchasing health and wellness produc
 - Node.js and npm installed.
 - MongoDB instance (local or cloud-based).
 
-### Back-End Setup
-1. Clone the repository:
+### Setup
+1. Clone the repository: for Frontend
    ```bash
-   git clone https://github.com/username/centrum-store-backend.git
-   cd centrum-store-backend
+   git clone (https://github.com/rahulsharma998/The-Backenders-Web_043/)
    ```
-2. Install dependencies:
+
+1. Clone the repository: for Backend
+   ```bash
+   git clone (https://the-backenders-043-1.onrender.com)
+   ```
+3. Install dependencies:
    ```bash
    npm install
    ```
-3. Create a `.env` file with the following variables:
-   ```
-   MONGO_URI=your-mongodb-connection-string
-   PORT=5000
-   ```
+
 4. Start the server:
    ```bash
    npm start
    ```
-5. Your API will be live at `http://localhost:5000`.
 
-### Front-End Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/centrum-store-frontend.git
-   cd centrum-store-frontend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm start
-   ```
-4. The app will be live at `http://localhost:3000`.
 
----
 
 ## API Endpoints
 
@@ -121,8 +104,8 @@ PurePharma is a comprehensive solution for purchasing health and wellness produc
 ---
 
 ## Live Links
-- **Frontend (Netlify)**: [Netlify Live Link](#)
-- **Backend (Render)**: [Render Live API Link](#)
+- **Frontend (Netlify)**: (https://6768f3ab44e08bdb6d2280c0--candid-mooncake-e8530d.netlify.app/)
+- **Backend (Render)**: (https://the-backenders-043-1.onrender.com)
 
 ---
 
@@ -144,10 +127,10 @@ PurePharma is a comprehensive solution for purchasing health and wellness produc
 
 ## Team Members
 This project was collaboratively developed by a team of 4 members:
-1. Member 1
-2. Member 2
-3. Member 3
-4. Member 4
+1. Rahul Sharma
+2. Shivam Gurjar
+3. Pritam
+4. Shivam Gopal
 
 ---
 
