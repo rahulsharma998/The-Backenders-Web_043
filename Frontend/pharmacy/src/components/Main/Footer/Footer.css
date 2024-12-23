@@ -1,0 +1,273 @@
+ .footer {
+    background-color: #f8f8f8;
+    padding: 50px;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  .footer-stat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .footer-stat img {
+    width: 100px;
+
+  }
+  
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  .footer-links{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 35px;
+   
+  }
+
+  .footer-links h4 {
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  h1 , h5,h4{
+    font-weight: normal;
+  }
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    line-height: 2;
+  }
+  .apps img{
+    width: 120px;
+    height: 40px;
+  }
+  .footer-links ul li {
+    margin-bottom: 5px;
+    
+  }
+  
+  .newsletter {
+    max-width: 300px;
+  }
+  
+  .form{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .main-form{
+    margin: 30px 0;
+    width: 240px;
+  }
+  .newsletter input {
+    border: none;
+    padding: 10px 15px;
+   
+  }
+  
+  .newsletter button {
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+  }
+  .section-container {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .line {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 0;
+   
+  }
+  
+  .netmeds-section {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  
+    gap: 50px;
+  
+  }
+  .netmeds-section img{
+    width: 200px;
+    margin: 40px 50px 40px 20px;
+  }
+  .footer-logo {
+    width: 80px;
+    height: auto;
+  }
+  
+  .description {
+    font-size: 15px;
+    color: #555;
+    max-width: 900px;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .payments{
+    margin: 25px;
+  }
+  .pantners{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 50px;
+    margin: 30px auto 10px 0px;
+  }
+  .copyrights{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 
+  } 
+@media screen and (max-width: 1024px) {
+    .footer-top {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .footer-stat {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-stat img {
+      width: 80px;
+    }
+  
+    .footer-links {
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .footer-links ul {
+      text-align: center;
+    }
+  
+    .netmeds-section {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .netmeds-section img {
+      margin: 0 auto;
+    }
+  
+    .pantners {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .apps img {
+      width: 100px;
+      height: auto;
+    }
+  
+    .newsletter {
+      text-align: center;
+      margin: 20px auto;
+    }
+  
+    .main-form {
+      width: 100%;
+    }
+  
+    .main-form .form {
+      gap: 10px;
+    }
+  
+    .newsletter input {
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    .newsletter button {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer {
+      padding: 20px;
+    }
+  
+    .footer-stat img {
+      width: 60px;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-links ul h5 {
+      font-size: 14px;
+    }
+  
+    .netmeds-section img {
+      width: 150px;
+    }
+  
+    .description {
+      font-size: 14px;
+      max-width: 100%;
+    }
+  
+    .apps img {
+      width: 90px;
+    }
+  
+    .pantners img {
+      width: 50px;
+    }
+  
+    .copyrights {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .footer-stat img {
+      width: 50px;
+    }
+  
+    .newsletter input,
+    .newsletter button {
+      width: 90%;
+    }
+  
+    .pantners img {
+      width: 40px;
+    }
+  
+    .description {
+      font-size: 13px;
+    }
+  
+    .copyrights {
+      font-size: 12px;
+    }
+  }
+

@@ -1,0 +1,10 @@
+.carousal-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.carousal-slide img{
+    height: 170px;
+}

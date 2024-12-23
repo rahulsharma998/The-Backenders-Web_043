@@ -1,0 +1,161 @@
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+  width: 100%;
+  height: 65px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+}
+
+.navbar .first-section,
+.navbar .second-section,
+.navbar .third-section {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .first-section {
+  gap: 30px;
+  position: relative;
+}
+
+/* Logo */
+.navbar .first-section .logo img {
+  height: 50px;
+  width: auto;
+  padding-left: 100px;
+}
+
+/* Location and Arrow Buttons */
+.navbar .first-section .loc-logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.loc-logo .location-label{
+  display: flex;
+  flex-direction: column;
+}
+.location-label .label-1{
+  font-size: 11px;
+}
+.location-label .label-2{
+  font-weight: 700;
+  font-size: 14px;
+}
+.navbar .first-section .loc-logo img {
+  width: 20px;
+  height: 20px;
+}
+
+.navbar .first-section .arrow-btn-for-location-change {
+  background-color: transparent;
+  border: 0;
+}
+
+.navbar .first-section .arrow-btn-for-location-change img {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.4s ease;
+}
+
+.navbar .first-section .arrow-btn-for-location-change img.rotated {
+  transform: rotate(180deg); /* Rotates the image by 180 degrees */
+}
+
+/* Search Bar */
+.navbar .second-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  margin-right: 100px;
+}
+
+.search-container {
+  background-color: rgb(247, 247, 247);
+  width: 550px;
+  padding-left: 10px;
+  margin-right: 0;
+  height: 35px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid rgb(218, 215, 215);
+  position: relative;
+  outline: none;
+}
+
+.search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgb(11, 90, 225);
+  border: none;
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 15px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.search-btn img {
+  height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Third section buttons */
+.navbar .third-section {
+  display: flex;
+  margin-right: 100px;
+  align-items: center;
+  gap: 15px;
+}
+
+.login-btn:hover {
+  background-color: #ddd;
+}
+
+/* Shopping Cart Icon */
+.navbar .third-section .shopping-cart img {
+  width: 25px;
+  height: 25px;
+}
+
+.login-btn {
+  padding: 9px;
+  color: blue;
+  font-weight: 600;
+  font-size: 15px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    
+    height: auto;
+  }
+
+  .navbar .second-section {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .search-container {
+    width: calc(100% - 20px);
+    margin: 10px auto;
+  }
+  
+}

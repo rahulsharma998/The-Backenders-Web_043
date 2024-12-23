@@ -1,0 +1,140 @@
+.p-tag-container{
+    display: flex;
+    padding: 10px;
+    padding-left: 120px;
+    padding-right: 120px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 600;
+    font-size: 12px;
+    color: beige;
+    background-color: rgb(11, 90, 225);
+}
+.p-tag-container p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.container2 {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(67, 125, 224);
+    position: relative;
+}
+
+.container2 #Doc1 {
+    height: 200px;
+    padding-left: 40px;
+}
+
+.container2 #Doc2 {
+    height: 200px;
+    margin-right: 40px;
+}
+
+.container2 .medicine1{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.container2 .medicine1 img{
+    height: 70px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+.container2 .medicine2 img{
+    height: 65px;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.container2 .midBlock p {
+    color: beige;
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center; /* Centers text inside the block */
+    margin-bottom: 3px;
+    padding-top: 0;
+    margin-top: 0; /* Adds spacing between text and image */
+}
+
+.container3{
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.container3 .homepage-category-btn{
+    border: none;
+    background-color: transparent;
+}
+.container3 .homepage-category-btn:hover{
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.container3 .homepage-category-btn #pharmacy-logo-div{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.container3 .homepage-category-btn #prescription-logo-div{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.container3 .homepage-category-btn #hospital-logo-div{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.container3 .homepage-category-btn #online-consultation-div{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.container3 .homepage-category-btn #health-record-div{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.container3 .homepage-category-btn .logo{
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+}
+
+.homepage-category-btn .pharmacy-logo{
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+}
+
+.container3 .homepage-category-btn .right-arrow{
+        height: 12px;
+}
+
+.container4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container4 img{
+    object-fit: contain;
+    height: 220px;
+    width: auto;
+    border-radius: 12px;
+}
+

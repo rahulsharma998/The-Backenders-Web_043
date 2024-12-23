@@ -1,0 +1,8 @@
+.product-container-mp{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 38px;
+    padding-right: 3px;
+    margin: 50px;
+}
