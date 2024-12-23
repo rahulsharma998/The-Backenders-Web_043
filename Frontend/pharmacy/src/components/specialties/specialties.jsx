@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import "./LocationPharma.css";
+import Navbar from "../Main/Navbar/navbar"
+import Footer from "../Main/Footer/footer"
 import { FaUserDoctor } from "react-icons/fa6";
 import { FaCalendarAlt } from "react-icons/fa";
 import { FaCreditCard } from "react-icons/fa6";
@@ -72,6 +74,8 @@ function Specialties() {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="location-pharma-container">
       <div className="left_box">
         <div className="find-doctors-container">
@@ -234,6 +238,8 @@ function Specialties() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
  
 }

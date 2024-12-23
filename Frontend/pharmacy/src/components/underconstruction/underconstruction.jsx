@@ -1,7 +1,6 @@
 import React from 'react'
 import Construction from '../../assets/Images/underconstruction.png'
 import Navbar from '../Main/Navbar/navbar'
-import Footer from '../Main/Footer/Footer'
 
 function Underconstruction() {
   return (
@@ -13,7 +12,6 @@ function Underconstruction() {
             <img src={Construction} alt="construction Image" style={{width:"305px"}}/>
 
         </div>
-        <Footer/>
     </div>
   )
 }
