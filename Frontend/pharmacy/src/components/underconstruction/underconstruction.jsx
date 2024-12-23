@@ -6,13 +6,14 @@ import Footer from '../Main/Footer/Footer'
 function Underconstruction() {
   return (
     <div>
-        {/* <Navbar/>
+        <Navbar/>
         <div style={{display:"flex",flexDirection:"column",alignItems:"center", padding:"50px", gap:"20px"}}>
             <h1>Currently! We are Under Construction</h1>
             <p>This Feature will available soon</p>
-            <img src={Construction} alt="construction Image" style={{width:"300px"}}/>
+            <img src={Construction} alt="construction Image" style={{width:"305px"}}/>
+
         </div>
-        <Footer/> */}
+        <Footer/>
     </div>
   )
 }
