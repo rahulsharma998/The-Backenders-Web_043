@@ -125,7 +125,7 @@ PurePharma is a comprehensive solution for purchasing health and wellness produc
 ## Screenshots
 
 ### Home Page
-![Home Page]([https://via.placeholder.com/800x400?text=Home+Page](https://github.com/rahulsharma998/The-Backenders-Web_043/blob/main/Frontend/pharmacy/public/photos/Screenshot%202024-12-23%20090829.png))
+![Home Page](https://github.com/rahulsharma998/The-Backenders-Web_043/blob/main/Frontend/pharmacy/public/photos/Screenshot%202024-12-23%20090829.png)
 
 ### Product Catalog
 ![Product Catalog](https://via.placeholder.com/800x400?text=Product+Catalog)
