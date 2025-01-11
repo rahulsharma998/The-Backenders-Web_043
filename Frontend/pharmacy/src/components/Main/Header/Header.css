@@ -1,5 +1,6 @@
 .p-tag-container{
     display: flex;
+    flex-wrap: wrap;
     padding: 10px;
     padding-left: 120px;
     padding-right: 120px;
@@ -17,49 +18,39 @@
 
 .container2 {
     display: flex;
-    height: 200px;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    height: auto; /* Allow height to adjust dynamically */
     align-items: center;
     justify-content: space-around;
     background-color: rgb(67, 125, 224);
-    position: relative;
+    padding: 10px 20px; /* Add some padding for spacing */
 }
 
-.container2 #Doc1 {
-    height: 200px;
-    padding-left: 40px;
-}
-
+.container2 #Doc1, 
 .container2 #Doc2 {
-    height: 200px;
-    margin-right: 40px;
+    height: 150px; /* Adjust height for smaller screens */
+    margin: 10px;
 }
 
-.container2 .medicine1{
+.container2 .midBlock {
     display: flex;
-    flex-direction: row;
-    justify-content: end;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    text-align: center; /* Center-align content */
 }
-.container2 .medicine1 img{
-    height: 70px;
-    padding-top: 10px;
-    padding-bottom: 0px;
-}
-.container2 .medicine2 img{
-    height: 65px;
-    padding-top: 0;
-    padding-bottom: 20px;
+
+.container2 .medicine1 img, 
+.container2 .medicine2 img {
+    height: 50px; /* Reduce image size for smaller screens */
 }
 
 .container2 .midBlock p {
     color: beige;
     font-weight: 600;
-    font-size: 35px;
-    text-align: center; /* Centers text inside the block */
-    margin-bottom: 3px;
-    padding-top: 0;
-    margin-top: 0; /* Adds spacing between text and image */
+    font-size: 25px; /* Adjust font size for smaller screens */
+    text-align: center;
+    margin: 10px 0; /* Add margin for spacing */
 }
-
 .container3{
     height: 115px;
     display: flex;
@@ -138,3 +129,127 @@
     border-radius: 12px;
 }
 
+@media (max-width: 768px) {
+    .p-tag-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: center; /* Center the items */
+    }
+
+    .p-tag-container p {
+        flex: 1 1 45%; /* Two items per row */
+        text-align: center; /* Center text */
+        margin: 5px; /* Reduce margin for smaller spacing */
+        font-size: 10px; /* Adjust font size */
+    }
+
+    .container2 {
+        flex-direction: column; /* Stack all elements vertically */
+        justify-content: center;
+        text-align: center; /* Center all content */
+        padding: 20px; /* Add padding for spacing */
+    }
+
+    .container2 #Doc1, 
+    .container2 #Doc2 {
+        height: 120px; /* Reduce height for smaller screens */
+    }
+
+    .container2 .midBlock p {
+        font-size: 22px; /* Adjust font size for better fit */
+    }
+
+    .container2 .medicine1 img, 
+    .container2 .medicine2 img {
+        height: 40px; /* Further reduce image size */
+    }
+
+    .container3 {
+        flex-direction: column;
+        height: auto;
+        gap: 20px; /* Reduce gap between buttons */
+    }
+    
+    .container3 .homepage-category-btn {
+        width: 100%; /* Make buttons full-width */
+        justify-content: center;
+    }
+
+    .container3 .homepage-category-btn .logo {
+        height: 30px; /* Scale down logo size */
+        width: 30px;
+    }
+
+    .container3 .homepage-category-btn .right-arrow {
+        height: 10px; /* Scale down arrow size */
+    }
+    .container4{
+        width: 100%;
+    }
+    .container4 img {
+        height: 130px;
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .p-tag-container {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .p-tag-container p {
+        flex: none; /* Ensure items stack individually */
+        font-size: 10px; /* Smaller font for smaller screens */
+        margin: 5px 0; /* Reduce margin further */
+    }
+
+    .container2 {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align all items */
+    }
+
+    .container2 #Doc1, 
+    .container2 #Doc2 {
+        height: 100px; /* Smaller height for mobile */
+    }
+
+    .container2 .midBlock p {
+        font-size: 18px; /* Smaller font size */
+    }
+
+    .container2 .medicine1 img, 
+    .container2 .medicine2 img {
+        height: 30px; /* Further reduce image size */
+    }
+
+    .container3 {
+        padding: 10px; /* Add padding for smaller screens */
+    }
+    
+    .container3 .homepage-category-btn {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center;
+        gap: 10px; /* Add spacing between content in the button */
+    }
+
+    .container3 .homepage-category-btn .logo {
+        height: 25px; /* Further scale down logo size */
+        width: 25px;
+    }
+
+    .container3 .homepage-category-btn .right-arrow {
+        display: none; /* Hide the arrow on very small screens for simplicity */
+    }
+    
+    .container3 .homepage-category-btn p {
+        font-size: 12px; /* Adjust font size for readability */
+    }
+    .container4{
+        width: 100%;
+    }
+    .container4 img {
+        height: 50px;
+        width: auto;
+    }
+}

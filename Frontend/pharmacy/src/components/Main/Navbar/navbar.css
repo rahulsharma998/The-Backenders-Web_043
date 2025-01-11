@@ -144,18 +144,37 @@
 
 @media (max-width: 768px) {
   .navbar {
-    
     height: auto;
   }
-
   .navbar .second-section {
     width: 100%;
     margin-right: 0;
   }
-
   .search-container {
     width: calc(100% - 20px);
     margin: 10px auto;
   }
   
+}
+
+@media (max-width: 480px) {
+  .navbar .first-section .logo img {
+    height: 40px;
+    padding-left: 5px;
+  }
+
+  .search-container {
+    font-size: 14px;
+    height: 30px;
+  }
+
+  .location-label .label-1,
+  .location-label .label-2 {
+    font-size: 10px;
+  }
+
+  .login-btn {
+    font-size: 12px;
+    padding: 6px;
+  }
 }

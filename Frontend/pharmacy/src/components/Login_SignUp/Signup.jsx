@@ -59,7 +59,7 @@ const Signup = ({ toggleToLogin }) => {
         <i className="fas fa-user"></i>
         <input
           type="text"
-          placeholder="First Name"
+          placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />

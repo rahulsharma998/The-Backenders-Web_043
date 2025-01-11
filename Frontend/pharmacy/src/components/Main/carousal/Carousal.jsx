@@ -25,13 +25,7 @@ const data = [
 ];
 
 // Helper function to chunk the data into groups of 3
-const chunkArray = (array, size) => {
-  const result = [];
-  for (let i = 0; i < array.length; i += size) {
-    result.push(array.slice(i, i + size));
-  }
-  return result;
-};
+
 
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
