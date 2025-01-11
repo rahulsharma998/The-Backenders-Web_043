@@ -1,4 +1,5 @@
-.carousel-container{
+.carousel-container {
+    position: relative; /* To position buttons relative to the carousel */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,23 +7,90 @@
     margin: 10px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;   
-}
-
-.carousel-card-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    position: relative;
-    transition: ease 0.7s;
-}
-.carousel-prev-photo,.carousel-next-photo{
-    padding: 10px 20px;
-    background-color: #fff;
     border-radius: 10px;
+    overflow: hidden; /* Prevent overflow of images */
+  }
+  
+  .carousel-card-container {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.7s ease; /* Smooth transition for carousel movement */
+    overflow: hidden; /* Ensure only visible images are shown */
+    width: 100%; /* Ensure it adapts to screen size */
+  }
+  
+  .carousel-card {
+    flex: 1 0 calc(100% / 3); /* Default: 3 images visible */
+  }
+  
+  .carousel-card img {
+    width: 100%;
+    max-height: 170px;
+    border-radius: 20px;
+    object-fit: cover; /* Ensure images scale well */
+  }
+  
+  /* Buttons */
+  .carousel-prev-photo,
+  .carousel-next-photo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center buttons */
+    z-index: 10; /* Ensure buttons are above images */
+    padding: 10px 20px;
     border: none;
-    background-color: #165D59;
+    background-color: #165d59;
     color: white;
-}
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-prev-photo {
+    left: 10px; /* Position the 'Prev' button on the left */
+  }
+  
+  .carousel-next-photo {
+    right: 10px; /* Position the 'Next' button on the right */
+  }
+  
+  .carousel-prev-photo:hover,
+  .carousel-next-photo:hover {
+    background-color: #0d3e3a;
+  }
+  
+  /* Responsive styling for tablets */
+  @media (max-width: 1024px) {
+    .carousel-card {
+      flex: 1 0 calc(100% / 2); /* Show 2 images on tablets */
+    }
+  
+    .carousel-container {
+      gap: 15px;
+    }
+  
+    .carousel-card img {
+      max-height: 150px;
+    }
+  }
+  
+  /* Responsive styling for mobile screens */
+  @media (max-width: 480px) {
+    .carousel-card {
+      flex: 1 0 100%; /* Show 1 image on mobile screens */
+    }
+  
+    .carousel-container {
+      gap: 10px;
+    }
+  
+    .carousel-card img {
+      max-height: 120px;
+    }
+  
+    .carousel-prev-photo,
+    .carousel-next-photo {
+      padding: 8px 15px; /* Adjust button size for smaller screens */
+    }
+  }
   

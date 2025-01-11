@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Carousal.css"; // Add styles for the carousel
+import "./Carousel.css"; // Updated for responsive styles
 
 const data = [
   {
@@ -24,26 +24,46 @@ const data = [
   },
 ];
 
-// Helper function to chunk the data into groups of 3
-
-
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [visibleCount, setVisibleCount] = useState(3);
+
+  useEffect(() => {
+    // Function to update visible image count based on screen width
+    const updateVisibleCount = () => {
+      if (window.innerWidth <= 480) {
+        setVisibleCount(1); // Mobile: Show 1 image
+      } else if (window.innerWidth <= 1024) {
+        setVisibleCount(2); // Tablets: Show 2 images
+      } else {
+        setVisibleCount(3); // Larger screens: Show 3 images
+      }
+    };
+
+    // Add event listener for window resize
+    window.addEventListener("resize", updateVisibleCount);
+
+    // Initial call
+    updateVisibleCount();
+
+    return () => {
+      window.removeEventListener("resize", updateVisibleCount);
+    };
+  }, []);
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length); // Increment index and loop back to the start
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
   };
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
       (prevIndex - 1 + data.length) % data.length
-    ); // Decrement index and loop back to the end
+    );
   };
 
-  // Dynamically calculate the three images to display
   const getVisibleImages = () => {
     const visibleImages = [];
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < visibleCount; i++) {
       visibleImages.push(data[(currentIndex + i) % data.length]);
     }
     return visibleImages;
@@ -73,4 +93,3 @@ function Carousel() {
 }
 
 export default Carousel;
-
