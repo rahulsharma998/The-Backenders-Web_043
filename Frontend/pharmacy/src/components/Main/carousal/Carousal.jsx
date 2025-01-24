@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Carousel.css"; // Updated for responsive styles
+import "./Carousal.css"; // Updated for responsive styles
 
 const data = [
   {
